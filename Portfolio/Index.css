@@ -1,0 +1,56 @@
+body {
+    background-color: #262626;
+    background-attachment: fixed;
+    margin: auto;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+div {
+    margin:auto;
+    height: 100%;
+    width: 100%;
+}
+
+.john {
+    width: 100vw;
+    height: auto;
+    z-index: 0;
+}
+
+
+.classy {
+    user-select: none; 
+    position: absolute;
+    top: 1vh;
+    left: 28%;
+    color: #262626;
+    font-size: 6vw;
+    font-family: Helvetica;
+    z-index: 2;
+    margin:auto;
+}
+
+
+.classy2 {
+    user-select: none; 
+    position: absolute;
+    top: 1.2vh;
+    left: 28.5%;
+    color: #747474;
+    font-size: 6vw;
+    font-family: Helvetica;
+    z-index: 1;
+    margin: auto;
+}
+.container{
+    z-index: 1;
+    position: absolute;
+    top: 1vh;
+    left: 24.5%;
+    width: 50vw;
+    height: 6vw;
+    background-color:gainsboro;
+    border: solid;
+    border-radius: 50px;
+}
