@@ -1,5 +1,5 @@
 body {
-    background-color: #262626;
+    background-color: lightgrey;
     background-attachment: fixed;
     margin: auto;
 }
@@ -22,7 +22,7 @@ div {
 .classy {
     user-select: none; 
     position: absolute;
-    top: 1vh;
+    top: 10vh;
     left: 28%;
     color: #262626;
     font-size: 6vw;
@@ -35,7 +35,7 @@ div {
 .classy2 {
     user-select: none; 
     position: absolute;
-    top: 1.2vh;
+    top: 10.2vh;
     left: 28.5%;
     color: #747474;
     font-size: 6vw;
@@ -43,14 +43,67 @@ div {
     z-index: 1;
     margin: auto;
 }
+
 .container{
+    background-color: grey;
     z-index: 1;
-    position: absolute;
-    top: 1vh;
-    left: 24.5%;
-    width: 50vw;
-    height: 6vw;
-    background-color:gainsboro;
-    border: solid;
-    border-radius: 50px;
+    top: 0;
+    left: 0;
+    width:100vw;
+    height: 45px;
+}
+
+.container2{
+    background-color: black;
+    z-index: 1;
+    top: 5vh;
+    left: 0;
+    width:100vw;
+    height: 3px;
+}
+
+.nav {
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    font-family: Verdana;
+    top: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    position: inherit;
+    float: left;
+    top: 0px;
+}
+
+ul {
+    position: relative;
+    margin:0;
+    padding: 0;
+    top: 0px;
+}
+
+
+button {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    color:lightgrey;
+    margin: 0;
+    text-align: center; 
+    padding-top: 15px;
+    padding-bottom: 14px;
+    padding-right: 1vw;
+    padding-left: 1vw;
+}
+
+button:hover {
+    color: black;
+    background-color: lightgrey;
 }
