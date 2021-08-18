@@ -22,27 +22,16 @@ div {
 .classy {
     user-select: none; 
     position: absolute;
-    top: 10vh;
-    left: 28%;
-    color: #262626;
-    font-size: 6vw;
+    top: 8px;
+    left: 46%;
+    color:lightgrey;
+    font-size: 25px;
     font-family: Helvetica;
     z-index: 2;
     margin:auto;
+    font: bold; 
 }
 
-
-.classy2 {
-    user-select: none; 
-    position: absolute;
-    top: 10.2vh;
-    left: 28.5%;
-    color: #747474;
-    font-size: 6vw;
-    font-family: Helvetica;
-    z-index: 1;
-    margin: auto;
-}
 
 .container{
     background-color: grey;
@@ -59,7 +48,7 @@ div {
     top: 5vh;
     left: 0;
     width:100vw;
-    height: 3px;
+    height: 1px;
 }
 
 .nav {
@@ -89,6 +78,9 @@ ul {
     top: 0px;
 }
 
+.burger{
+    display: none;
+}
 
 button {
     background-color: inherit;
@@ -99,11 +91,43 @@ button {
     text-align: center; 
     padding-top: 15px;
     padding-bottom: 14px;
-    padding-right: 1vw;
-    padding-left: 1vw;
+    padding-right: 15px;
+    padding-left: 15px;
 }
+
+.burger div{
+    position: relative;
+    height: 3px;
+    width: 20px;
+    left:80vw;
+    top: 13px;
+    background-color: lightgrey;
+    margin: 4px;
+    margin-top: 0px;
+    cursor: pointer;
+    
+}
+
 
 button:hover {
     color: black;
     background-color: lightgrey;
 }
+
+@media screen and (max-width:1008px){
+.classy {
+    left: 40%;
+}
+}
+
+@media screen and (max-width:708px){
+    .classy {
+        left: 30%;
+    }
+    .nav{
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+    }
