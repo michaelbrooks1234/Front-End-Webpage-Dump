@@ -17,13 +17,6 @@ div {
     width: 100%;
 }
 
-.john {
-    width: 100vw;
-    height: auto;
-    z-index: 0;
-}
-
-
 .classy {
     user-select: none; 
     position: fixed;
@@ -38,7 +31,8 @@ div {
 }
 
 
-.container{
+#container{
+    transform: translateY(-100%);
     position: fixed;
     background-color: grey;
     z-index: 1;
@@ -142,7 +136,7 @@ button:hover {
 .aboutsection {
     padding:0px;
     margin:0px;
-    padding-top: 35vh;
+    padding-top: 135vh;
     font-size: 15px;
     padding-bottom: .5vh;
     padding-left: 25.5vw;  
@@ -184,4 +178,68 @@ button:hover {
     background-color: #0096FF;
     width: 100vw;
     height: 100vh;
+}
+
+.images {
+    top:0;
+    position: absolute;
+    filter: brightness(50%) blur(3px);
+    height:100vh;
+    width: 100vw;
+}
+
+.side1 {
+    position: fixed;
+    left:0;
+    height: 100vh;
+    width: .1vw;
+    background-color: #0096FF;
+}
+
+.side2 {
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    width: .1vw;
+    background-color: #0096FF;
+}
+
+#portfolio1 {
+    position: absolute;
+    font-size: 5vw;
+    font-weight: bold;
+    left: 40vw;
+    top:50vh;
+    font-family: "Roboto Condensed", sans-serif;
+    color: lightgrey;
+    animation: 1s ease-out 0s 1 fadein;
+}
+
+#nametitle {
+    position: absolute;
+    font-size: 5vw;
+    font-weight: bold;
+    left: 32vw;
+    top:35vh;
+    font-family: "Roboto Condensed", sans-serif;
+    color: lightgrey;
+    animation: fadein linear 1s;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+@keyframes fadein {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+
+    50% {
+        opacity: 30%;
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
 }
