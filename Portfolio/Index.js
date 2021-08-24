@@ -12,8 +12,8 @@ window.onscroll = (event) => {
         portfolio1.style.opacity = 1-window.scrollY/500;
         nametitle.style.opacity = 1-window.scrollY/300;
         container.style.opacity = 0+window.scrollY/500;
-        if(window.scrollY >= bruh*100 && window.scrollY <= bruh*180){
-            about.style.backgroundColor = "orange";
+        if(window.scrollY >= bruh*95 && window.scrollY <= bruh*180){
+            about.style.backgroundColor = "#E68910";
             bruh = window.innerHeight/100;
         }else{
             about.style.backgroundColor = "";
@@ -21,7 +21,7 @@ window.onscroll = (event) => {
         
         
         if(window.scrollY >= bruh*180){
-            projects.style.backgroundColor = "orange";
+            projects.style.backgroundColor = "#E68910";
             bruh = window.innerHeight/100;
         }else{
             projects.style.backgroundColor = "";
