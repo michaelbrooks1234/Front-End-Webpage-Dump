@@ -22,9 +22,9 @@ div {
     position: fixed;
     top: 8px;
     left: 46%;
-    color:lightgrey;
+    color:white;
     font-size: 25px;
-    font-family: Helvetica;
+    font-family: "Roboto Condensed", sans-serif;
     z-index: 2;
     margin:auto;
     font: bold; 
@@ -32,21 +32,21 @@ div {
 
 
 #container{
-    transform: translateY(-100%);
+    opacity: 0;
     position: fixed;
-    background-color: grey;
+    background-color: #0E2B8A;
     z-index: 1;
-    top: 0;
+    top: -100;
     left: 0;
     width:100vw;
-    height: 45px;
+    height: 4.5vh;
 }
 
 .container2{
     position: fixed;
     background-color: black;
     z-index: 1;
-    top: 45px;
+    margin-top:4.5vh;
     left: 0;
     width:100vw;
     height: 1px;
@@ -58,18 +58,20 @@ div {
     padding: 0;
     list-style-type: none;
     text-align: center;
-    font-family: Verdana;
+    font-family: "Roboto Condensed", sans-serif;
     top: 0px;
+    color: white;
 }
 
 a {
     text-decoration: none;
 }
 
-li {
+.nav li {
     position: inherit;
     float: left;
     top: 0px;
+    color: white;
 }
 
 ul {
@@ -77,17 +79,20 @@ ul {
     margin:0;
     padding: 0;
     top: 0px;
+    color: white;
 }
 
 .burger{
     display: none;
+    position: absolute;
+    right: 2vw;
 }
 
 button {
     background-color: inherit;
     border: none;
     cursor: pointer;
-    color:lightgrey;
+    color:white;
     margin: 0;
     text-align: center; 
     padding-top: 15px;
@@ -111,8 +116,7 @@ button {
 
 
 button:hover {
-    color: black;
-    background-color: lightgrey;
+    background-color: #E68910;
 }
 
 @media screen and (max-width:1008px){
@@ -136,46 +140,36 @@ button:hover {
 .aboutsection {
     padding:0px;
     margin:0px;
-    padding-top: 135vh;
-    font-size: 15px;
-    padding-bottom: .5vh;
-    padding-left: 25.5vw;  
-    font-family: Verdana;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 25vw;  
+    font-family: "Roboto Condensed", sans-serif;
     width: 160px;
-    padding-bottom: 2.5vw;
+    padding-bottom: 5vh;
+    color: white;
 }
 
 .aboutcontent {
-    font-size: 20px;
-    height: auto;
+    font-size: 25px;
+    height: 20vh;
     width: auto;
     padding-right: 25vw;
     padding-left: 25vw;
     margin: auto;
-    font-family: Verdana;
-}
-
-.hellothing {
-    background-color: black;
-    height: 25px;
-    width: 4px;
-}
-
-.style {
-    background-color: black;
-    height:25px;
-    width: 3px;
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .transition {
-    margin-top:50vh;
-    background-color: lightgrey;
+    background-color: black;
     height: 1px;
     width: 100vw;
 }
 
 .sectiontwo {
-    background-color: #0096FF;
+    background-color: #0E2B8A;
     width: 100vw;
     height: 100vh;
 }
@@ -183,9 +177,10 @@ button:hover {
 .images {
     top:0;
     position: absolute;
-    filter: brightness(50%) blur(3px);
+    filter: brightness(50%) blur(1px);
     height:100vh;
     width: 100vw;
+    background-color: black;
 }
 
 .side1 {
@@ -211,8 +206,9 @@ button:hover {
     left: 40vw;
     top:50vh;
     font-family: "Roboto Condensed", sans-serif;
-    color: lightgrey;
+    color: white;
     animation: 1s ease-out 0s 1 fadein;
+    user-select: none
 }
 
 #nametitle {
@@ -222,8 +218,9 @@ button:hover {
     left: 32vw;
     top:35vh;
     font-family: "Roboto Condensed", sans-serif;
-    color: lightgrey;
+    color: white;
     animation: fadein linear 1s;
+    user-select: none
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
@@ -243,3 +240,32 @@ button:hover {
       transform: translateY(0);
     }
 }
+
+@keyframes fadeout {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    100% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+}
+
+#transition2 {
+    margin-top:99.75vh;
+    background-color: black;
+    height: 2px;
+    width: 100vw;
+}
+
+#aboutbackground {
+    background-color: #E68910;
+}
+
+#sidebar {
+    position: absolute;
+    display: none;
+}
+
