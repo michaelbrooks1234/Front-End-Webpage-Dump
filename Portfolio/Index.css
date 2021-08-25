@@ -8,6 +8,7 @@ body {
     background-attachment: fixed;
     margin: auto;
 }
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -32,14 +33,15 @@ div {
 
 
 #container{
+    top: 0;
     opacity: 0;
     position: fixed;
     background-color: #0E2B8A;
-    z-index: 1;
-    top: -100;
+    z-index: 2;
     left: 0;
     width:100vw;
     height: 4.5vh;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
 }
 
 .container2{
@@ -53,6 +55,7 @@ div {
 }
 
 .nav {
+
     left: 0;
     margin: 0;
     padding: 0;
@@ -140,26 +143,27 @@ button:hover {
 .aboutsection {
     padding:0px;
     margin:0px;
-    font-size: 25px;
+    height: 10vh;
+    font-size: 2vw;
     font-weight: bold;
-    padding-left: 25vw;  
+    margin-left: 20vw;
+    padding-left: 5vw;  
+    padding-bottom: 10vh;
     font-family: "Roboto Condensed", sans-serif;
-    width: 160px;
-    padding-bottom: 5vh;
     color: white;
+    padding-top: 30vh;
+    z-index: 1;
 }
 
 .aboutcontent {
-    font-size: 25px;
-    height: 20vh;
-    width: auto;
-    padding-right: 25vw;
-    padding-left: 25vw;
-    margin: auto;
+    font-size: 1.5vw;
     font-family: "Roboto Condensed", sans-serif;
     color: white;
-    padding-bottom: 0;
+    padding: 0;
+    margin-top: 0;
     margin-bottom: 0;
+    margin-right: 15vw;
+    margin-left: 25vw;
 }
 
 .transition {
@@ -183,21 +187,6 @@ button:hover {
     background-color: black;
 }
 
-.side1 {
-    position: fixed;
-    left:0;
-    height: 100vh;
-    width: .1vw;
-    background-color: #0096FF;
-}
-
-.side2 {
-    position: fixed;
-    right: 0;
-    height: 100vh;
-    width: .1vw;
-    background-color: #0096FF;
-}
 
 #portfolio1 {
     position: absolute;
@@ -262,10 +251,43 @@ button:hover {
 
 #aboutbackground {
     background-color: #E68910;
+    height: 103vh;
 }
 
 #sidebar {
     position: absolute;
-    display: none;
+    z-index: 2;
+    top: 135vh;
+    height: 4vw;
+    width: 4vw;
+}
+
+#sidebar img{
+    margin-left: 4vw;
+    width: 4vw;
+    height: 4vw;
+    margin-bottom: 12vh;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
+}
+
+#sidebar img:hover{
+    width: 6vw;
+    height: 6vw;
+    margin-bottom: 6vh;
+    animation: .75s enlarge 0s;
+}
+
+@keyframes enlarge {
+    0% {
+      width: 4vw;
+      height: 4vw;
+      margin-bottom: 12vh;
+    }
+
+    100% {
+      width: 6vw;
+      height: 6vw;
+      margin-bottom: 6vh
+    }
 }
 
