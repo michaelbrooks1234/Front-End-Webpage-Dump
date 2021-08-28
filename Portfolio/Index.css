@@ -183,7 +183,7 @@ button:hover {
 .sectiontwo {
     background-color: #2E8BC0;
     width: 100vw;
-    height: 100vh;
+    height: 204.1vh;
 }
 
 .images {
@@ -339,4 +339,102 @@ button:hover {
     left: 10px;
     height: 20vh;
     width: 25vh;
+}
+
+#projectTitle {
+    position: absolute;
+    z-index: 9;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 2vw;
+    color: white;
+    margin-left: 42vw;
+    margin-top: 18vh;
+}
+
+#secondarybackground3 {
+    position: absolute;
+    z-index: 0;
+    background-color: #006DCC;
+    height: 10vh;
+    width: 25vw;
+    top: 220vh;
+    left: 37.5vw;
+    border-radius: 15px;
+    box-shadow: -5px 4px 2px 0 rgba(0,0,0,.7);
+}
+
+#projectcontainer {
+    position: absolute;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 50vh;
+}
+#projectcontainer div{
+    position: absolute;
+    display: inline;
+    background-color: #006DCC;
+    width: 32%;
+    height: 60vh;
+    border-radius: 15px;
+    box-shadow: -5px 4px 2px 0 rgba(0,0,0,.7);
+}
+
+#projectchild2 {
+    margin-left: 34%;
+}
+
+#projectchild3 {
+    margin-left: 68%;
+}
+
+#projectcontainer div p {
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+#projectcontainer div img {
+    position: absolute;
+    margin-left: 2vw;
+    margin-top: 5vh;
+}
+
+#website {
+    box-shadow: -5px 4px 2px 0 rgba(0,0,0,.7);
+    width: 25vw;
+    height: 15vw;
+    z-index: 10;
+}
+
+#nasaapp {
+    box-shadow: -5px 4px 2px 0 rgba(0,0,0,.7);
+    width: 25vw;
+    height: 20vw;
+    z-index: 10;
+}
+
+#calculator {
+    box-shadow: -5px 4px 2px 0 rgba(0,0,0,.7);
+    width: 25vw;
+    height: 20vw;
+    z-index: 10;
+}
+
+
+#projectcontainer div img:hover {
+    filter: blur(2px);
+    animation: 0.3s hoverchange 0s;
+}
+
+@keyframes hoverchange {
+    0% {
+      filter: blur(0px);
+    }
+
+    100% {
+      filter: blur(2px);
+    }
 }
