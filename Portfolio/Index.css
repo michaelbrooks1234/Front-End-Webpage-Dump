@@ -387,7 +387,7 @@ button:hover {
     margin-left: 68%;
 }
 
-#projectcontainer div p {
+#projectcontainer div h1 {
     font-family: "Roboto Condensed", sans-serif;
     color: white;
     font-size: 2vw;
@@ -427,14 +427,30 @@ button:hover {
 #projectcontainer div img:hover {
     filter: blur(2px);
     animation: 0.3s hoverchange 0s;
+    opacity: 0.5;
 }
 
 @keyframes hoverchange {
     0% {
       filter: blur(0px);
+      opacity: 1;
     }
 
     100% {
       filter: blur(2px);
+      opacity: 0.5;
     }
+}
+
+#projectcontainer div p{
+    display: none;
+    position: absolute;
+    margin-top: 10vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+    font-weight: bold;
+    z-index: 11;
+    font-size: 1.5vw;
 }
