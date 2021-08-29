@@ -4,6 +4,7 @@ let container = document.getElementById("container");
 let about = document.getElementById("about");
 let projects = document.getElementById("projects");
 let skills = document.getElementById("skills");
+let websitey = document.getElementById("website");
 
 let bruh = window.innerHeight/100;
 
@@ -29,3 +30,7 @@ window.onscroll = (event) => {
         }
     }
 };
+
+websitey.addEventListener("mouseover", (event) => {
+    
+})
