@@ -228,10 +228,6 @@ button:hover {
       transform: translateY(-100%);
     }
 
-    50% {
-        opacity: 30%;
-    }
-
     100% {
       opacity: 1;
       transform: translateY(0);
@@ -242,6 +238,10 @@ button:hover {
     0% {
       opacity: 1;
       transform: translateY(0);
+    }
+
+    50%{
+        opacity: 0;
     }
 
     100% {
@@ -443,6 +443,7 @@ button:hover {
 }
 
 #projectcontainer div p{
+    pointer-events: none;
     display: none;
     position: absolute;
     margin-top: 10vh;
