@@ -5,6 +5,8 @@ let about = document.getElementById("about");
 let projects = document.getElementById("projects");
 let skills = document.getElementById("skills");
 let websitey = document.getElementById("website");
+let nasay = document.getElementById("nasaapp");
+let calculatey = document.getElementById("calculator");
 
 let bruh = window.innerHeight/100;
 
@@ -32,5 +34,41 @@ window.onscroll = (event) => {
 };
 
 websitey.addEventListener("mouseover", (event) => {
-    
+        document.getElementById("websitetext").style.display = "block";
+        document.getElementById("websitetext").style.animation = "1s fadein 0s";
+})
+
+websitey.addEventListener("mouseleave", (event) => {
+        document.getElementById("websitetext").style.animation = "0.5s fadeout 0s";
+        setTimeout((event) => {
+            document.getElementById("websitetext").style.display = "none";
+        }, 100)
+})
+
+
+
+nasay.addEventListener("mouseover", (event) => {
+    document.getElementById("nasatext").style.display = "block";
+    document.getElementById("nasatext").style.animation = "1s fadein 0s";
+})
+
+nasay.addEventListener("mouseleave", (event) => {
+    document.getElementById("nasatext").style.animation = "0.5s fadeout 0s";
+    setTimeout((event) => {
+        document.getElementById("nasatext").style.display = "none";
+    }, 100)
+})
+
+
+
+calculatey.addEventListener("mouseover", (event) => {
+    document.getElementById("calctext").style.display = "block";
+    document.getElementById("calctext").style.animation = "1s fadein 0s";
+})
+
+calculatey.addEventListener("mouseleave", (event) => {
+    document.getElementById("calctext").style.animation = "0.5s fadeout 0s";
+    setTimeout((event) => {
+        document.getElementById("calctext").style.display = "none";
+    }, 100)
 })
