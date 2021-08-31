@@ -10,12 +10,14 @@ let calculatey = document.getElementById("calculator");
 
 let bruh = window.innerHeight/100;
 
+document.getElementById("porttext").style.display = "block";
+
 window.onscroll = (event) => {
     if(window.scrollY > 0){
         portfolio1.style.opacity = 1-window.scrollY/500;
         nametitle.style.opacity = 1-window.scrollY/300;
         container.style.opacity = 0+window.scrollY/500;
-        if(window.scrollY >= bruh*95 && window.scrollY <= bruh*180){
+        if(window.scrollY >= bruh*95 && window.scrollY <= bruh*199){
             about.style.backgroundColor = "#2E8BC0";
             bruh = window.innerHeight/100;
         }else{
@@ -23,7 +25,7 @@ window.onscroll = (event) => {
         }
         
         
-        if(window.scrollY >= bruh*180){
+        if(window.scrollY >= bruh*199){
             projects.style.backgroundColor = "#2E8BC0";
             bruh = window.innerHeight/100;
         }else{
