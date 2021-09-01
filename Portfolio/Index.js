@@ -11,6 +11,14 @@ let calculatey = document.getElementById("calculator");
 let bruh = window.innerHeight/100;
 
 document.getElementById("porttext").style.display = "block";
+document.getElementById("projectchild5").style.height = "80vh";
+document.getElementById("projectchild5").style.width = "90vw";
+document.getElementById("nameywamey").style.textAlign = "left";
+document.getElementById("nameywamey").style.fontSize = "1.5vw";
+document.getElementById("nameywamey2").style.textAlign = "left";
+document.getElementById("nameywamey2").style.fontSize = "1.5vw";
+document.getElementById("nameywamey3").style.textAlign = "left";
+document.getElementById("nameywamey3").style.fontSize = "1.5vw";
 
 window.onscroll = (event) => {
     if(window.scrollY > 0){
