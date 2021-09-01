@@ -183,7 +183,7 @@ button:hover {
 .sectiontwo {
     background-color: #2E8BC0;
     width: 100vw;
-    height: 204.1vh;
+    height: 275.8vh;
 }
 
 .images {
@@ -369,15 +369,6 @@ button:hover {
     margin-left: 5%;
     margin-top: 50vh;
 }
-#projectcontainer div{
-    position: absolute;
-    display: inline;
-    background-color: #006DCC;
-    width: 32%;
-    height: 60vh;
-    border-radius: 15px;
-    box-shadow: -5px 4px 2px 0 rgba(0,0,0,.7);
-}
 
 #projectchild2 {
     margin-left: 34%;
@@ -392,6 +383,22 @@ button:hover {
     margin-top: 40%;
 }
 
+#projectchild5 {
+    margin-left: 0;
+    margin-top: 80%;
+    width: 90vw;
+    height: 80vh;
+}
+
+#projectcontainer div{
+    position: absolute;
+    display: inline;
+    background-color: #006DCC;
+    width: 32%;
+    height: 60vh;
+    border-radius: 15px;
+    box-shadow: -5px 4px 2px 0 rgba(0,0,0,.7);
+}
 
 #projectcontainer div h1 {
     font-family: "Roboto Condensed", sans-serif;
@@ -464,4 +471,39 @@ button:hover {
     font-weight: bold;
     z-index: 11;
     font-size: 1.5vw;
+}
+
+#nameywamey {
+    margin-left: 5%;
+    text-align: left;
+    margin-top: 5%;
+}
+
+#nameywamey2 {
+    margin-left: 5%;
+    text-align: left;
+    margin-top: 5%;
+}
+
+#nameywamey3 {
+    margin-left: 5%;
+    text-align: left;
+    margin-top: 5%;
+}
+
+input {
+    width: 90%;
+    margin-left: 5%;
+}
+
+#input1 {
+    height: 3vh;
+}
+
+#input2 {
+    height: 3vh;
+}
+
+#input3 {
+    height: 40vh;
 }
