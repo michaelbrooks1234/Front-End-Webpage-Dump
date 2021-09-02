@@ -7,6 +7,8 @@ let skills = document.getElementById("skills");
 let websitey = document.getElementById("website");
 let nasay = document.getElementById("nasaapp");
 let calculatey = document.getElementById("calculator");
+let gitty = document.getElementById("git");
+let indeedy = document.getElementById("indeed");
 
 let bruh = window.innerHeight/100;
 
@@ -81,4 +83,46 @@ calculatey.addEventListener("mouseleave", (event) => {
     setTimeout((event) => {
         document.getElementById("calctext").style.display = "none";
     }, 100)
+})
+
+gitty.addEventListener("mouseover", (event) => {
+    gitty.style.width = "6vw";
+    gitty.style.height = "6vw";
+    gitty.style.marginBottom = "6vh";
+    gitty.style.animation = ".75s enlarge 0s";
+    setTimeout((event) => {
+    }, 750);
+})
+
+gitty.addEventListener("mouseleave", (event) => {
+    gitty.style.width = "4vw";
+    gitty.style.height = "4vw";
+    gitty.style.marginBottom = "12vh";
+    gitty.style.animation = ".75s unlarge 0s";
+    setTimeout((event) => {
+    }, 750);
+})
+
+indeedy.addEventListener("mouseover", (event) => {
+    indeedy.style.width = "6vw";
+    indeedy.style.height = "6vw";
+    indeedy.style.marginBottom = "6vh";
+    indeedy.style.animation = ".75s enlarge 0s";
+    gitty.style.marginTop = "3vh";
+    gitty.style.marginBottom = "9vh";
+    gitty.style.animation = ".75s haleymation 0s";
+    setTimeout((event) => {
+    }, 750);
+})
+
+indeedy.addEventListener("mouseleave", (event) => {
+    indeedy.style.width = "4vw";
+    indeedy.style.height = "4vw";
+    indeedy.style.marginBottom = "12vh";
+    indeedy.style.animation = ".75s unlarge 0s";
+    gitty.style.marginTop = "0vh";
+    gitty.style.marginBottom = "12vh";
+    gitty.style.animation = ".75s undohaleymation 0s";
+    setTimeout((event) => {
+    }, 750);
 })
