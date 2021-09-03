@@ -3,7 +3,7 @@ let nametitle = document.getElementById("nametitle");
 let container = document.getElementById("container");
 let about = document.getElementById("about");
 let projects = document.getElementById("projects");
-let skills = document.getElementById("skills");
+let contact = document.getElementById("contact");
 let websitey = document.getElementById("website");
 let nasay = document.getElementById("nasaapp");
 let calculatey = document.getElementById("calculator");
@@ -13,21 +13,27 @@ let indeedy = document.getElementById("indeed");
 let bruh = window.innerHeight/100;
 
 document.getElementById("porttext").style.display = "block";
-document.getElementById("projectchild5").style.height = "80vh";
-document.getElementById("projectchild5").style.width = "90vw";
+document.getElementById("projectchild5").style.height = "60vh";
+document.getElementById("projectchild5").style.width = "60vw";
 document.getElementById("nameywamey").style.textAlign = "left";
-document.getElementById("nameywamey").style.fontSize = "1.5vw";
+document.getElementById("nameywamey").style.fontSize = "1vw";
+document.getElementById("nameywamey").style.marginLeft = "5%";
 document.getElementById("nameywamey2").style.textAlign = "left";
-document.getElementById("nameywamey2").style.fontSize = "1.5vw";
+document.getElementById("nameywamey2").style.fontSize = "1vw";
+document.getElementById("nameywamey2").style.marginLeft = "5%";
 document.getElementById("nameywamey3").style.textAlign = "left";
-document.getElementById("nameywamey3").style.fontSize = "1.5vw";
+document.getElementById("nameywamey3").style.fontSize = "1vw";
+document.getElementById("nameywamey3").style.marginLeft = "5%";
+document.getElementById("nameywamey4").style.textAlign = "left";
+document.getElementById("nameywamey4").style.fontSize = "1vw";
+document.getElementById("nameywamey4").style.marginLeft = "5%";
 
 window.onscroll = (event) => {
     if(window.scrollY > 0){
         portfolio1.style.opacity = 1-window.scrollY/500;
         nametitle.style.opacity = 1-window.scrollY/300;
         container.style.opacity = 0+window.scrollY/500;
-        if(window.scrollY >= bruh*95 && window.scrollY <= bruh*199){
+        if(window.scrollY >= bruh*95 && window.scrollY < bruh*199){
             about.style.backgroundColor = "#2E8BC0";
             bruh = window.innerHeight/100;
         }else{
@@ -35,11 +41,19 @@ window.onscroll = (event) => {
         }
         
         
-        if(window.scrollY >= bruh*199){
+        if(window.scrollY >= bruh*199 && window.scrollY < bruh*377){
             projects.style.backgroundColor = "#2E8BC0";
             bruh = window.innerHeight/100;
         }else{
             projects.style.backgroundColor = "";
+            bruh = window.innerHeight/100;
+        }
+
+        if(window.scrollY > bruh*377){
+            contact.style.backgroundColor = "#2E8BC0";
+            bruh = window.innerHeight/100;
+        }else{
+            contact.style.backgroundColor = "";
             bruh = window.innerHeight/100;
         }
     }
