@@ -417,10 +417,8 @@ button:hover {
 }
 
 #projectchild5 {
-    margin-left: 0;
+    margin-left: 15%;
     margin-top: 80%;
-    width: 90vw;
-    height: 80vh;
 }
 
 #projectcontainer div{
@@ -506,37 +504,42 @@ button:hover {
     font-size: 1.5vw;
 }
 
-#nameywamey {
-    margin-left: 5%;
-    text-align: left;
-    margin-top: 5%;
-}
-
-#nameywamey2 {
-    margin-left: 5%;
-    text-align: left;
-    margin-top: 5%;
-}
-
-#nameywamey3 {
-    margin-left: 5%;
-    text-align: left;
-    margin-top: 5%;
-}
-
 input {
-    width: 90%;
-    margin-left: 5%;
+    margin-left: 3vw;
+    padding: 0;
+    resize: none;
+    box-shadow: -1px 2px 2px 0 rgba(0,0,0,.7);
+    border-radius: 5px;
 }
 
 #input1 {
+    width: 30%;
     height: 3vh;
 }
 
 #input2 {
+    width: 45%;
     height: 3vh;
 }
 
 #input3 {
-    height: 40vh;
+    width: 60%;
+    height: 3vh;
+}
+
+textarea {
+    height: 20vh;
+    width: 90%;
+    margin-left: 3vw;
+    box-shadow: -1px 4px 4px 0 rgba(0,0,0,.7);
+    resize: none;
+    border-radius: 5px;
+}
+
+#mrcrabs {
+    position: absolute;
+    display: block;
+    font-family: "Roboto Condensed", sans-serif;
+    z-index: 11;
+    font-size: 1.5vw;
 }
