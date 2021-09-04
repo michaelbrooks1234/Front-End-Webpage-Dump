@@ -413,12 +413,12 @@ button:hover {
 
 #projectchild4 {
     margin-left: 34%;
-    margin-top: 40%;
+    margin-top: 70vh;
 }
 
 #projectchild5 {
     margin-left: 15%;
-    margin-top: 80%;
+    margin-top: 145vh;
 }
 
 #projectcontainer div{
@@ -467,6 +467,12 @@ button:hover {
     z-index: 10;
 }
 
+#nicepic {
+    box-shadow: -5px 4px 2px 0 rgba(0,0,0,.7);
+    width: 25vw;
+    height: 15vw;
+    z-index: 10;
+}
 
 #projectcontainer div img:hover {
     filter: blur(2px);
@@ -504,42 +510,7 @@ button:hover {
     font-size: 1.5vw;
 }
 
-input {
-    margin-left: 3vw;
-    padding: 0;
-    resize: none;
-    box-shadow: -1px 2px 2px 0 rgba(0,0,0,.7);
-    border-radius: 5px;
-}
-
-#input1 {
-    width: 30%;
-    height: 3vh;
-}
-
-#input2 {
-    width: 45%;
-    height: 3vh;
-}
-
-#input3 {
-    width: 60%;
-    height: 3vh;
-}
-
-textarea {
-    height: 20vh;
-    width: 90%;
-    margin-left: 3vw;
-    box-shadow: -1px 4px 4px 0 rgba(0,0,0,.7);
-    resize: none;
-    border-radius: 5px;
-}
-
-#mrcrabs {
+#message {
     position: absolute;
-    display: block;
-    font-family: "Roboto Condensed", sans-serif;
-    z-index: 11;
-    font-size: 1.5vw;
+    margin-top: 10vh;
 }
