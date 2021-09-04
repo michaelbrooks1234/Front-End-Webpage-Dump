@@ -9,24 +9,16 @@ let nasay = document.getElementById("nasaapp");
 let calculatey = document.getElementById("calculator");
 let gitty = document.getElementById("git");
 let indeedy = document.getElementById("indeed");
+let nicepic = document.getElementById("nicepic");
 
 let bruh = window.innerHeight/100;
 
-document.getElementById("porttext").style.display = "block";
+
 document.getElementById("projectchild5").style.height = "60vh";
 document.getElementById("projectchild5").style.width = "60vw";
-document.getElementById("nameywamey").style.textAlign = "left";
-document.getElementById("nameywamey").style.fontSize = "1vw";
-document.getElementById("nameywamey").style.marginLeft = "5%";
-document.getElementById("nameywamey2").style.textAlign = "left";
-document.getElementById("nameywamey2").style.fontSize = "1vw";
-document.getElementById("nameywamey2").style.marginLeft = "5%";
-document.getElementById("nameywamey3").style.textAlign = "left";
-document.getElementById("nameywamey3").style.fontSize = "1vw";
-document.getElementById("nameywamey3").style.marginLeft = "5%";
-document.getElementById("nameywamey4").style.textAlign = "left";
-document.getElementById("nameywamey4").style.fontSize = "1vw";
-document.getElementById("nameywamey4").style.marginLeft = "5%";
+document.getElementById("message").style.marginTop = "22vh";
+document.getElementById("message").style.marginLeft = "2vw";
+document.getElementById("message").style.marginRight = "2vw";
 
 window.onscroll = (event) => {
     if(window.scrollY > 0){
@@ -71,8 +63,6 @@ websitey.addEventListener("mouseleave", (event) => {
         }, 100)
 })
 
-
-
 nasay.addEventListener("mouseover", (event) => {
     document.getElementById("nasatext").style.display = "block";
     document.getElementById("nasatext").style.animation = "1s fadein 0s";
@@ -85,8 +75,6 @@ nasay.addEventListener("mouseleave", (event) => {
     }, 100)
 })
 
-
-
 calculatey.addEventListener("mouseover", (event) => {
     document.getElementById("calctext").style.display = "block";
     document.getElementById("calctext").style.animation = "1s fadein 0s";
@@ -96,6 +84,18 @@ calculatey.addEventListener("mouseleave", (event) => {
     document.getElementById("calctext").style.animation = "0.5s fadeout 0s";
     setTimeout((event) => {
         document.getElementById("calctext").style.display = "none";
+    }, 100)
+})
+
+nicepic.addEventListener("mouseover", (event) => {
+    document.getElementById("porttext").style.display = "block";
+    document.getElementById("porttext").style.animation = "1s fadein 0s";
+})
+
+nicepic.addEventListener("mouseleave", (event) => {
+    document.getElementById("porttext").style.animation = "0.5s fadeout 0s";
+    setTimeout((event) => {
+        document.getElementById("porttext").style.display = "none";
     }, 100)
 })
 
